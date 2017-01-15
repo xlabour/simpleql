@@ -1,1 +1,2 @@
 # simpleql
+Simple PHP SQL
