@@ -4,7 +4,8 @@ error_reporting(0);
 $q = $_POST['q'];
 if (isset($q) && $q!=''){
 	include("./_dbconnect.inc.php");
-	$r = mysqli_query($dblink, $q) or die (mysql_error($dblink));
+	$r = mysqli_query($dblink, $q) or die (mysqli_error($dblink));
+	mysqli_close($dblink);
 }
 ?>
 <html>
