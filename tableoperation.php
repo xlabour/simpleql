@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 
 $q = $_POST['q'];
 if (isset($q) && $q!=''){
